@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <!-- Sidebar nav -->
+        <aside th:fragment="leftAside">
+            <div class="sidebar box sticky-column">
+                <ul class="nav" id="asideNav">
+                    <li class="nav__item"><a th:class="${'about' == page} ? 'active':''" href="/parp/001/about"><i class="icon-user"></i>关于</a></li>
+                    <li class="nav__item"><a th:class="${'resume' == page} ? 'active':''" href="/parp/001/resume"><i class="icon-file-text"></i>简历</a></li>
+                    <li class="nav__item"><a th:class="${'works' == page} ? 'active':''" href="/parp/001/works"><i class="icon-codesandbox"></i>作品</a></li>
+                    <li class="nav__item"><a th:class="${'blog' == page} ? 'active':''" href="/parp/001/blog"><i class="icon-book-open"></i>博客</a></li>
+                    <li class="nav__item"><a th:class="${'contact' == page} ? 'active':''" href="/parp/001/contact"><i class="icon-book"></i>联系</a></li>
+                </ul>
+            </div>
+        </aside>
+</body>
+<script src="assets/js/listenEvent.js"></script>
+</html>
